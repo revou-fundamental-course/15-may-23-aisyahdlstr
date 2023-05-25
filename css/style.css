@@ -10,7 +10,7 @@
 }
 
 header {
-    background: #0000ff8a;
+    background: #2196F3;
     padding: 10px 30px;
     text-align: center;
     font-family: cursive;
@@ -29,9 +29,8 @@ header {
 
   input {
     width: 100%;
-    /* box-sizing: border-box; */
-    /* padding: 10px;
-    margin: 2px 20px; */
+    box-sizing: border-box;
+    padding: 3px;
   }
 
   .container_luas {
@@ -48,7 +47,8 @@ header {
     background-color: #2196F3;
     padding: 1px;
   }
-  
+
+
 
     .title {
         font-weight: bold;
@@ -76,6 +76,25 @@ header {
         width: 50px;
 
     }
-    .result-luas{
-      visibility: hidden;
+
+
+    .result{
+      visibility: show;
+    }
+    
+
+/* Button Hitung Dan reset */
+    .hitung {
+      float: right;
+      padding: 5px 10px;
+      margin: 20px -30px;
+      background-color: skyblue;
+      border-color: black;
+      color: white;
+    }
+  
+    .reset {
+      float: right;
+      padding: 5px 10px;
+      margin: 20px 40px;
     }

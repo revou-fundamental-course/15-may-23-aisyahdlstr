@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css"
 </head>
 <body>
+    <title>Katik</title>
 
     <header>
       <span class="title">Katik</span>&nbsp;<span class="subtitle">(Kalkulator Matematik)</span>
@@ -32,20 +33,23 @@
                         <p>Dimana : </p>
                         <p>L = Luas</p>
                         <p>S = Sisi</p>
+                        
                     </div>
+
+                    <p style="border-bottom: 4px solid lightgray"></p>
+
                     <div>
-                        
-                            <h3 style="text-align: center; border-bottom: 4px solid lightgray">Hitung Luas Persegi</h3>
+                        <form id="formluas">
+                            <h2 style="text-align: center;">Hitung Luas Persegi</h2>
+                            <input id="sisi-luas" name="sisi-luas" required>
+                                
+                            <p class="result" id="rumus-luas"></p>
+                            <p class="result" id="perhitungan-luas"></p>
+                            <p class="result" id="output-luas"></p>
                             
-                            <input id="id-sisi-luas" name="sisi-luas" required>
-                            
-                            <p class="result-luas" id="rumus-luas">L = S x S</p>
-                            <p class="result-luas" id="perhitungan-luas"></p>
-                            <p class="result-luas"><span id="output-luas"></span></p>
-                            
-                            <button name="hitung-luas" onclick="hitungluas()">Hitung</button>
-                            <button name="reset-luas">Reset</button>
-                        
+                            <button type="reset" class="reset" name="reset-luas" onclick="resetluas()">Reset</button>
+                            <button type="button" class="hitung" name="hitung-luas" onclick="hitungluas()">Hitung</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -58,23 +62,26 @@
                     </div>
                     <div class="description">
                         <p>Keliling Persegi yaitu :</p>
-                        <p> L = S x S </p>
+                        <p style="text-align: center;"> K = 4 x S </p>
         
-                        <p>Dimana</p>
-                        <p>L = Luas</p>
+                        <p>Dimana :</p>
+                        <p>K = Keliling</p>
                         <p>S = Sisi</p>
                     </div>
+
+                    <p style="border-bottom: 4px solid lightgray"></p>
                     <div>
-                        
-                            <h3>Hitung Keliling Persegi</h3>
-                            <input id="id-sisi-luas" name="sisi-luas" required>
+                        <form id="formkeliling">
+                            <h2 style="text-align: center">Hitung Keliling Persegi</h2>
+                            <input id="sisi-keliling" name="sisi-keliling" required>
+                                
+                            <p class="result" id="rumus-keliling"></p>
+                            <p class="result" id="perhitungan-keliling""></p>
+                            <p class="result"><span id="output-keliling""></span></p>
                             
-                            <p class="result-luas" id="rumus-luas">L = S x S</p>
-                            <p class="result-luas" id="perhitungan-luas"></p>
-                            <p class="result-luas"><span id="output-luas"></span></p>
-                            
-                            <button name="hitung-luas" onclick="hitungluas()">Hitung</button>
-                            <button name="reset-luas">Reset</button>
+                            <button type="reset" class="reset" name="reset-keliling">Reset</button>   
+                            <button type="button" class="hitung" name="hitung-keliling" onclick="hitungkeliling()">Hitung</button>
+                        </form>
                         
                     </div>
                 </div>
