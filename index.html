@@ -10,35 +10,77 @@
 <body>
 
     <header>
-      <span class="title">Katik</span><span class="subtitle">(Kalkulator Matematik)</span>
+      <span class="title">Katik</span>&nbsp;<span class="subtitle">(Kalkulator Matematik)</span>
     </header>
 
     <main>
-        <div class="card">
-            <div class="figure">
-                <div class="square"></div>
-            </div>
-            <div class="description">
-                <p>Luas Persegi yaitu :</p>
-                <p> L = S x S </p>
-
-                <p>Dimana</p>
-                <p>L = Luas</p>
-                <p>S = Sisi</p>
-            </div>
-            <div>
-                <form>
-                    <h2>Hitung Luas Persegi</h2>
-                    <input id="id-sisi-luas" name="sisi-luas" required>
-                    <p id="rumus-luas"></p>
-                    <p id="perhitungan-luas"></p>
-                    <p id="ouput-luas"></p>
-                    <button type="submit" name="hitung-luas" onclick="hitungluas()">Hitung</button>
-                    <button name="reset-luas">Reset</button>
-                </form>
-            </div>
-        </div>
+        <h2 style="text-align: center;">Welcome to Katik</h2>
+        <p style="text-align:center;">Hai sobat, Selamat datang di Katik :)</p>
+        <p style="text-align:center;">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
         
+        <div class="container">
+            <div class="container_luas">
+                <h2 style="text-align: center; color: white;">Luas Persegi</h2>
+                <div class="card">
+                    <div class="figure">
+                        <div class="square"></div>
+                    </div>
+                    <div class="description">
+                        <p> Rumus Luas Persegi yaitu :</p>
+                        <p style="text-align: center;"> L = S x S </p>
+        
+                        <p>Dimana : </p>
+                        <p>L = Luas</p>
+                        <p>S = Sisi</p>
+                    </div>
+                    <div>
+                        
+                            <h3 style="text-align: center; border-bottom: 4px solid lightgray">Hitung Luas Persegi</h3>
+                            
+                            <input id="id-sisi-luas" name="sisi-luas" required>
+                            
+                            <p class="result-luas" id="rumus-luas">L = S x S</p>
+                            <p class="result-luas" id="perhitungan-luas"></p>
+                            <p class="result-luas"><span id="output-luas"></span></p>
+                            
+                            <button name="hitung-luas" onclick="hitungluas()">Hitung</button>
+                            <button name="reset-luas">Reset</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_keliling">
+                <h2 style="text-align: center; color: white;">Keliling Persegi</h2>
+                <div class="card">
+                    <div class="figure">
+                        <div class="square"></div>
+                    </div>
+                    <div class="description">
+                        <p>Keliling Persegi yaitu :</p>
+                        <p> L = S x S </p>
+        
+                        <p>Dimana</p>
+                        <p>L = Luas</p>
+                        <p>S = Sisi</p>
+                    </div>
+                    <div>
+                        
+                            <h3>Hitung Keliling Persegi</h3>
+                            <input id="id-sisi-luas" name="sisi-luas" required>
+                            
+                            <p class="result-luas" id="rumus-luas">L = S x S</p>
+                            <p class="result-luas" id="perhitungan-luas"></p>
+                            <p class="result-luas"><span id="output-luas"></span></p>
+                            
+                            <button name="hitung-luas" onclick="hitungluas()">Hitung</button>
+                            <button name="reset-luas">Reset</button>
+                        
+                    </div>
+                </div>
+            </div>
+        
+         </div>
     </main>
     
     <footer>

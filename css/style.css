@@ -1,33 +1,71 @@
 .body{
     background: #d3d3d340;
+    background-repeat: no-repeat;
+}
+
+
+.h2 {
+  text-align: center;
+  color: white;
 }
 
 header {
     background: #0000ff8a;
     padding: 10px 30px;
     text-align: center;
+    font-family: cursive;
   } 
-  
+  .container{
+    
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 5px;
+    column-gap: 40px;
+    row-gap: 40px;
+    width: auto;
+    margin: 10px;
+    
+  }
+
   input {
     width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
+    /* box-sizing: border-box; */
+    /* padding: 10px;
+    margin: 2px 20px; */
   }
+
+  .container_luas {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 1px;
+    
+  }
+  
+  .container_keliling {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 1px;
+  }
+  
 
     .title {
         font-weight: bold;
+        font-size: xx-large;
         color: white;
     }
     .subtitle {
-        color: gray;
+      color: lightgray;
         font-size: small;
+        font-weight: bold;
     }
     .card{
         background:white;
     }
 
     .figure {
-        min-height: 50px;
+        min-height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,4 +75,7 @@ header {
         height: 50px;
         width: 50px;
 
+    }
+    .result-luas{
+      visibility: hidden;
     }
