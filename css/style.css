@@ -1,0 +1,40 @@
+.body{
+    background: #d3d3d340;
+}
+
+header {
+    background: #0000ff8a;
+    padding: 10px 30px;
+    text-align: center;
+  } 
+  
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+    .title {
+        font-weight: bold;
+        color: white;
+    }
+    .subtitle {
+        color: gray;
+        font-size: small;
+    }
+    .card{
+        background:white;
+    }
+
+    .figure {
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .square{
+        border: 1px solid red;
+        height: 50px;
+        width: 50px;
+
+    }
